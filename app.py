@@ -19,8 +19,8 @@ os.getcwd()
 
 import zipfile
 
-zip_path = "/Users/shashwatshrivastava/home-credit-default-risk.zip"
-extract_to = "/Users/shashwatshrivastava/home_credit_data"
+zip_path = "/Users/manishgurjar/home-credit-default-risk.zip"
+extract_to = "/Users/manishgurjar/home_credit_data"
 
 with zipfile.ZipFile(zip_path, 'r') as zip_ref:
     zip_ref.extractall(extract_to)
@@ -32,7 +32,7 @@ with zipfile.ZipFile(zip_path, 'r') as zip_ref:
 import pandas as pd
 import sqlite3
 
-base_path = "/Users/shashwatshrivastava/home_credit_data"
+base_path = "/Users/manishgurjar/home_credit_data"
 conn = sqlite3.connect(":memory:")
 
 # Primary Table
